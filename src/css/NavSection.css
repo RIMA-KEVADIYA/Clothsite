@@ -1,16 +1,19 @@
 .Navlogo {
   font-style: Sans-serif;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 50px;
 }
 .Navlogo {
   display: flex;
+  justify-content: space-between;
 }
 
 .NavLinks {
   display: flex;
+  color: black;
   padding-top: 15px;
   list-style-type: none;
+  text-decoration: none;
   vertical-align: baseline;
   gap: 30px;
 }
@@ -19,16 +22,34 @@
 }
 .ShopLink:hover .dropdown {
   display: block;
+  width: auto;
+  background-color: rgb(238, 235, 235);
+  border: 1px solid black;
 }
 .NavSection {
   display: flex;
+  justify-content: space-around;
 }
 #SearchBar {
-  margin-top: 5px;
-  font-size: 15px;
+  margin-top: 15px;
+  font-size: 20px;
   border: none;
   background-color: rgb(233, 231, 228);
   border-radius: 20px;
-  padding: 5px 0px 5px 10px;
+  padding: 5px 50px 5px 10px;
   background-image: url("./images/searchicon.png");
+}
+.CartContact {
+  margin-top: 10px;
+}
+.CartButton {
+  border: none;
+}
+li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+.CartButton img {
+  height: 40px;
 }
