@@ -52,12 +52,53 @@
   justify-content: space-around;
   background-color: black;
   color: white;
-  padding: 5px;
+  padding: 15px;
   font-size: 40px;
 }
 .MainText {
   padding-top: 110px;
 }
+.ItemsText {
+  font-weight: 900;
+  text-align: center;
+  font-size: 40px;
+
+  padding-top: 20px;
+}
 .DesText {
   padding-top: 20px;
+}
+.Product1 {
+  border: none;
+  border-radius: 20px;
+}
+.Product1 img {
+  border-radius: 20px;
+}
+.Rating {
+  color: gold;
+  font-size: 20px;
+}
+.ProDes {
+  font-size: 20px;
+  font-weight: 500;
+}
+.Price {
+  font-size: 20px;
+}
+.cloth_Section {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+.viewall {
+  background-color: white;
+  color: black;
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.viewbtn {
+  text-align: center;
 }
