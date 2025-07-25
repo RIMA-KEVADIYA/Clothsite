@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  overflow: hidden;
+}
+.SignUpLink {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+.SignUpLink a {
+  color: white;
+  text-decoration: none;
+}
