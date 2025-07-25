@@ -1,3 +1,6 @@
+header {
+  background-color: rgb(250, 248, 248);
+}
 .Navlogo {
   font-style: Sans-serif;
   font-weight: 900;
@@ -52,4 +55,7 @@ li a {
 }
 .CartButton img {
   height: 40px;
+}
+.MText {
+  font-size: 20px;
 }

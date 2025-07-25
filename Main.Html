@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/Main.css" />
     <link rel="stylesheet" href="./src/css/NavSection.css" />
+    <link rel="stylesheet" href="./src/css/MainContent.css" />
   </head>
   <body>
     <header>
@@ -14,46 +15,79 @@
           Sign up and get 20% off to your first order.<a href="#"
             >Sign Up Now</a
           >
-          <nav>
-            <section class="NavSection" >
-                <div class="logo">
-                <h2 class="Navlogo">SHOP.CO</h2>
-                </div>
-                <div class="ToolOptions">
-                <ul class="NavLinks">
-                  <li class="ShopLink"><a href="#">Shop</a>
-                       <a class="dropdown">Men</a>
-                       <a class="dropdown">Women</a>
-                       <a class="dropdown">Childen</a>
-                  </li>
-                  <li><a href="#">On Sale</a></li>
-                  <li><a href="#">New Arrivals</a></li>
-                  <li><a href="#">Brands</a></li>
-                  </ul>
-                  </div>
-                  <div class="Search">
-                    <input id="SearchBar" type="text" placeholder="Search Here...">
-                    </div>
-                    <div class="CartContact"> 
-                     <button class="CartButton"><img src="./images/cart.png"></button>
-                      <button class="CartButton"><img src="./images/contact.png"></button>
-                    </div>
+        </p>
+
+        <nav>
+          <section class="NavSection">
+            <div class="logo">
+              <h2 class="Navlogo">SHOP.CO</h2>
+            </div>
+            <div class="ToolOptions">
+              <ul class="NavLinks">
+                <li class="ShopLink">
+                  <a href="#">Shop</a>
+                  <a class="dropdown">Men</a>
+                  <a class="dropdown">Women</a>
+                  <a class="dropdown">Childen</a>
+                </li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+              </ul>
+            </div>
+            <div class="Search">
+              <input id="SearchBar" type="text" placeholder="Search Here..." />
+            </div>
+            <div class="CartContact">
+              <button class="CartButton">
+                <img src="./images/cart.png" />
+              </button>
+              <button class="CartButton">
+                <img src="./images/contact.png" />
+              </button>
+            </div>
           </section>
-          </nav>
-        </h2>
+        </nav>
       </section>
     </header>
 
-
-
-
-
-
     <main>
-
+      <section>
+        <div class="Content">
+          <div class="MainText">
+            <p class="MText">
+              FIND CLOTHES <br />
+              THAT MATCHES <br />YOUR STYLE
+            </p>
+            <p class="DesText">
+              Browse Through our diverse range of meticulosly crafted garments,
+              designed <br />to bring out your individually and cater to your
+              sense of style.
+            </p>
+            <button class="ShopNow">Shop Now</button>
+            <div class="Counting">
+              <div class="count1">
+                <p class="Count">200+</p>
+                <p class="CountDes">International Brands</p>
+              </div>
+              <div class="count1">
+                <p class="Count">2,000+</p>
+                <p class="CountDes">High-Quality Products</p>
+              </div>
+              <div class="count1">
+                <p class="Count">30,000+</p>
+                <p class="CountDes">Happy Customers</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img id="LeftStar" src="./images/star.png" />
+            <img src="./images/img.png" />
+            <img id="RightStar" src="./images/star.png" />
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
