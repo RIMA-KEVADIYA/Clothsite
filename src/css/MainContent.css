@@ -36,12 +36,24 @@
   padding-bottom: 250px;
   height: 40px;
 }
+.MainImage img {
+  height: 500px;
+}
 
 .Content {
   max-width: auto;
   display: flex;
-  gap: 100px;
+  gap: 250px;
   justify-content: space-around;
+}
+.Brands {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 40px;
 }
 .MainText {
   padding-top: 110px;
