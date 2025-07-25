@@ -34,8 +34,9 @@
 }
 #LeftStar {
   padding-bottom: 250px;
-  font-size: 20px;
+  height: 40px;
 }
+
 .Content {
   max-width: auto;
   display: flex;
