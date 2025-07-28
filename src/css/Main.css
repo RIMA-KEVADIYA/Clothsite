@@ -17,9 +17,12 @@ body {
   text-decoration: none;
 }
 @media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
   .SignUpLink {
-    width: 100%;
-    font-size: 15px;
+    width: fit-content !important;
+    font-size: 10px;
     text-align: center;
   }
 
@@ -35,6 +38,7 @@ body {
   }
   .MainText {
     width: auto;
+    padding-top: 50px !important;
     text-align: center;
   }
   .Counting {
@@ -44,6 +48,7 @@ body {
   .count1 {
     text-align: center;
   }
+
   .MainImage {
     text-align: center;
   }
@@ -83,6 +88,14 @@ body {
   .viewall {
     margin-top: 30px;
   }
+  .LatestOffer {
+    display: none;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .OfferText {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -104,6 +117,7 @@ body {
   }
   .MainText {
     width: auto;
+    padding-top: 50px !important;
     text-align: center;
   }
   .Counting {
@@ -134,9 +148,8 @@ body {
     max-width: 100%;
   }
   .Brands {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
   }
   .cloth_Section {
     display: grid !important;
@@ -165,6 +178,14 @@ body {
   .viewall {
     margin-top: 30px;
   }
+  .LatestOffer {
+    display: none;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .OfferText {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -188,11 +209,11 @@ body {
     width: auto;
     text-align: center;
   }
-  .Counting {
+  /* .Counting {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-  }
+  } */
 
   .count1 {
     text-align: center;
@@ -216,12 +237,12 @@ body {
     object-fit: cover;
     max-width: 100%;
   }
-  .Brands {
+  /* .Brands {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     justify-items: center;
-  }
+  } */
   .Brands.CK {
     grid-column: 1 / -1;
     justify-self: center;
@@ -302,11 +323,11 @@ body {
     object-fit: cover;
     max-width: 100%;
   }
-  .Brands {
+  /* .Brands {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-  }
+  } */
   .Brands.CK {
     grid-column: 1 / -1;
     justify-self: center;
