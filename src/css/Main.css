@@ -16,3 +16,38 @@ body {
   color: white;
   text-decoration: none;
 }
+@media screen and (max-width: 320px) {
+  .SignUpLink {
+    width: 100%;
+  }
+
+  nav .NavSection .ToolOptions {
+    display: none;
+  }
+  .Search {
+    display: none;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainText {
+    width: auto;
+    text-align: center;
+  }
+  .Counting {
+    display: flex;
+    flex-direction: column;
+  }
+  .count1 {
+    text-align: center;
+  }
+  .MainImage {
+    text-align: center;
+  }
+  #MainImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
