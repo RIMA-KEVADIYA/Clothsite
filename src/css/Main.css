@@ -19,6 +19,8 @@ body {
 @media screen and (max-width: 320px) {
   .SignUpLink {
     width: 100%;
+    font-size: 15px;
+    text-align: center;
   }
 
   nav .NavSection .ToolOptions {
@@ -53,5 +55,290 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  .cloth_Section {
+    display: grid !important;
+  }
+  .cloth_Section div {
+    padding-top: 20px;
+  }
+  .Navlogo {
+    font-size: 30px !important;
+    padding-top: 10px;
+  }
+  .CartButton img {
+    height: 30px !important;
+  }
+  .MText {
+    font-size: 35px !important;
+  }
+  .DesText {
+    font-size: 20px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .ItemsText {
+    padding-top: 40px !important;
+  }
+  .viewall {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .SignUpLink {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  nav .NavSection .ToolOptions {
+    display: none;
+  }
+  .Search {
+    display: none;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainText {
+    width: auto;
+    text-align: center;
+  }
+  .Counting {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .count1 {
+    text-align: center;
+  }
+  .CountDes {
+    font-size: 18px !important;
+  }
+  .CountDes.Des {
+    font-size: 19px !important;
+  }
+  /* Make the third item span two columns and center it */
+  .count1.full-width {
+    grid-column: 1 / -1; /* spans both columns */
+    justify-self: center; /* horizontal centering */
+  }
+
+  .MainImage {
+    text-align: center;
+  }
+  #MainImage {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .Brands {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cloth_Section {
+    display: grid !important;
+  }
+  .cloth_Section div {
+    padding-top: 20px;
+  }
+  .Navlogo {
+    font-size: 35px !important;
+    padding-top: 10px;
+  }
+  .CartButton img {
+    height: 35px !important;
+  }
+  .MText {
+    font-size: 35px !important;
+  }
+  .DesText {
+    font-size: 20px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .ItemsText {
+    padding-top: 40px !important;
+  }
+  .viewall {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .SignUpLink {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  nav .NavSection .ToolOptions {
+    display: none;
+  }
+  .Search {
+    display: none;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainText {
+    width: auto;
+    text-align: center;
+  }
+  .Counting {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .count1 {
+    text-align: center;
+  }
+  /* Make the third item span two columns and center it */
+  .count1.full-width {
+    grid-column: 1 / -1; /* spans both columns */
+    justify-self: center; /* horizontal centering */
+  }
+  .CK {
+    white-space: nowrap;
+    text-align: center;
+  }
+  .CountDes {
+    font-size: 20px !important;
+  }
+  .MainImage {
+    text-align: center;
+  }
+  #MainImage {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .Brands {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+  }
+  .Brands.CK {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .cloth_Section {
+    display: grid !important;
+  }
+  .cloth_Section div {
+    padding-top: 20px;
+  }
+  .Navlogo {
+    font-size: 30px !important;
+    padding-top: 10px;
+  }
+  .CartButton img {
+    height: 30px !important;
+  }
+  .MText {
+    font-size: 35px !important;
+  }
+  .DesText {
+    font-size: 20px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .ItemsText {
+    padding-top: 40px !important;
+  }
+  .viewall {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .SignUpLink {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  nav .NavSection .ToolOptions {
+    display: none;
+  }
+  .Search {
+    display: none;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainText {
+    width: auto;
+    text-align: center;
+  }
+  .Counting {
+    justify-content: center;
+  }
+
+  .count1 {
+    text-align: center;
+  }
+  /* Make the third item span two columns and center it */
+  .count1.full-width {
+    grid-column: 1 / -1; /* spans both columns */
+    justify-self: center; /* horizontal centering */
+  }
+  .CK {
+    white-space: nowrap;
+    text-align: center;
+  }
+  .CountDes {
+    font-size: 20px !important;
+  }
+  .MainImage {
+    text-align: center;
+  }
+  #MainImage {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .Brands {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .Brands.CK {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  /* .cloth_Section {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 50px auto; center on the page
+    justify-items: center; center items in each grid cell 
+  }*/
+  .cloth_Section div {
+    padding-top: 20px;
+  }
+  .Navlogo {
+    font-size: 30px !important;
+    padding-top: 10px;
+  }
+  .CartButton img {
+    height: 30px !important;
+  }
+  .MText {
+    font-size: 50px !important;
+  }
+  .DesText {
+    font-size: 30px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .ItemsText {
+    padding-top: 40px !important;
+  }
+  .viewall {
+    margin-top: 30px;
   }
 }
