@@ -43,7 +43,7 @@
 .Content {
   max-width: auto;
   display: flex;
-  gap: 250px;
+  justify-content: space-between;
   justify-content: space-around;
 }
 .Brands {
