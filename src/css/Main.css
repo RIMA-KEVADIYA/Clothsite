@@ -17,6 +17,9 @@ body {
   text-decoration: none;
 }
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  .SignUpLink {
+    font-size: 35px;
+  }
   .NavLinks {
     display: none;
   }
@@ -34,6 +37,14 @@ body {
   .MainImage {
     text-align: center;
   }
+  .cloth_Section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-top: 0px;
+  }
+  .cloth_Section div {
+    padding-top: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 700px) {
@@ -42,16 +53,17 @@ body {
   }
   .SignUpLink {
     width: 100%;
+    font-size: 30px;
   }
   .NavLinks {
     display: none;
   }
   .Navlogo {
-    font-size: 35px;
-    padding-top: 10px;
+    font-size: 45px;
+    padding-top: 5px;
   }
   .CartButton img {
-    height: 35px;
+    height: 45px;
   }
   .Content {
     display: flex;
@@ -250,6 +262,13 @@ body {
   .Brands {
     display: grid;
     grid-template-columns: auto;
+  }
+  .LatestOffer {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .OfferText {
+    text-align: center;
   }
 }
 
