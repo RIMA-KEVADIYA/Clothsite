@@ -16,9 +16,13 @@ body {
   color: white;
   text-decoration: none;
 }
-@media screen and (max-width: 425px) and (min-width: 375px) {
+@media screen and (max-width: 425px) and (min-width: 400px) {
   body {
     overflow-x: hidden;
+  }
+  #MainImage {
+    object-fit: cover;
+    max-width: 100%;
   }
   .SignUpLink {
     width: 100% !important;
@@ -43,9 +47,13 @@ body {
     flex-direction: column;
   }
   .Brands {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
+  }
+  .cloth_Section {
+    display: grid;
+    padding-top: 10px;
   }
   .Brands .CK {
     white-space: nowrap;
@@ -61,38 +69,64 @@ body {
   }
   .SignUpLink {
     width: 100% !important;
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
   }
-  .Search {
-    display: none;
+  .cloth_Section div {
+    margin-bottom: 30px;
   }
-  .NavLinks {
-    display: none;
-  }
-  .MainText {
-    text-align: center;
-  }
-  .Counting {
-    display: flex;
-    flex-direction: column;
-  }
-  .Content {
-    display: flex;
-    flex-direction: column;
-  }
-  #MainImage {
-    object-fit: cover;
-    max-width: 100%;
-  }
-  .cloth_Section {
-    display: grid;
-  }
-  .Brands {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+}
+.Navlogo {
+  font-size: 30px;
+  padding-top: 10px;
+}
+.Search {
+  display: none;
+}
+.NavLinks {
+  display: none;
+}
+.MText {
+  font-size: 40px;
+}
+.DesText {
+  font-size: 23px;
+}
+.Count {
+  font-size: 25px;
+}
+.CountDes {
+  font-size: 25px;
+}
+.ItemsText {
+  font-size: 40px;
+}
+.MainText {
+  text-align: center;
+}
+.Counting {
+  display: flex;
+  flex-direction: column;
+}
+.Content {
+  display: flex;
+  flex-direction: column;
+}
+#MainImage {
+  object-fit: cover;
+  max-width: 100%;
+}
+.CartButton img {
+  height: 30px;
+}
+.cloth_Section {
+  display: grid;
+  padding-top: 10px;
+}
+.Brands {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (max-width: 320px) {
@@ -101,7 +135,7 @@ body {
   }
   .SignUpLink {
     width: 100% !important;
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
   }
   nav .NavSection .ToolOptions {
@@ -126,7 +160,12 @@ body {
   .count1 {
     text-align: center;
   }
-
+  .cloth_Section {
+    padding-top: 0px;
+  }
+  .viewbtn {
+    padding-top: 0px;
+  }
   .MainImage {
     text-align: center;
   }
