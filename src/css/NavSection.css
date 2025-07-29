@@ -10,6 +10,12 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.ShopLink {
+  position: relative;
+}
+.ShopLink .dropdown {
+  position: absolute;
+}
 
 .NavLinks {
   display: flex;
