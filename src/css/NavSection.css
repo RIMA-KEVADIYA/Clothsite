@@ -24,7 +24,7 @@ header {
   list-style-type: none;
   text-decoration: none;
   vertical-align: baseline;
-  gap: 30px;
+  gap: 60px;
 }
 .dropdown {
   display: none;
