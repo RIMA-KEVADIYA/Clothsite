@@ -1,0 +1,22 @@
+footer .Footerlogo {
+  font-size: 50px;
+  font-weight: 900;
+}
+.FooterDes {
+  color: rgb(151, 149, 149);
+  font-size: 20px;
+}
+.FooterLinks {
+  color: rgb(151, 149, 149);
+  list-style-type: none;
+  font-size: 20px;
+}
+.LinkHead {
+  font-size: 25px;
+}
+.FooterSection1 {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+}
