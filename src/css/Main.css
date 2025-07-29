@@ -235,10 +235,9 @@ body {
     padding-top: 40px !important;
   }
   .viewall {
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .LatestOffer {
-    display: none;
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
