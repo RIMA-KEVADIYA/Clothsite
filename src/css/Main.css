@@ -138,7 +138,40 @@ body {
   }
   .LatestOffer {
     display: flex;
+    width: 550px;
     justify-content: center;
+  }
+
+  .FooterSection1 {
+    display: grid !important;
+    grid-template-columns: repeat(3, auto);
+  }
+  .LinksList {
+    margin-left: 20px;
+  }
+  .LinkHead {
+    padding-top: 30px;
+  }
+  .FLogoFDes {
+    margin-left: 15px;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .FooterSection2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .FooterAddress {
+    margin-left: 20px;
+  }
+  .PaymentMethod img {
+    width: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -209,6 +242,44 @@ body {
   .cloth_Section {
     display: grid;
     grid-template-columns: auto;
+  }
+  .LatestOffer {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .OfferText {
+    text-align: center;
+  }
+  .FooterSection1 {
+    display: grid !important;
+    grid-template-columns: repeat(2, auto);
+  }
+  .LinksList {
+    margin-left: 20px;
+  }
+  .LinkHead {
+    padding-top: 30px;
+  }
+  .FLogoFDes {
+    margin-left: 15px;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .FooterSection2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .FooterAddress {
+    margin-left: 20px;
+  }
+  .PaymentMethod img {
+    width: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -294,6 +365,37 @@ body {
   .OfferText {
     text-align: center;
   }
+  .FooterSection1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .LinksList {
+    margin-left: 70px;
+  }
+  .LinkHead {
+    padding-top: 30px;
+  }
+  .FLogoFDes {
+    margin-left: 15px;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .FooterSection2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .FooterAddress {
+    text-align: center;
+  }
+  .PaymentMethod img {
+    width: 60px;
+    margin-left: 15px;
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -378,5 +480,35 @@ body {
   }
   .OfferText {
     text-align: center;
+  }
+  .FooterSection1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .LinksList {
+    margin-left: 70px;
+  }
+  .LinkHead {
+    padding-top: 30px;
+  }
+  .FLogoFDes {
+    margin-left: 15px;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .FooterSection2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .FooterAddress {
+    text-align: center;
+  }
+  .PaymentMethod img {
+    width: 60px;
+    margin-left: 30px;
   }
 }

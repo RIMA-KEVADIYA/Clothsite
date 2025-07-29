@@ -1,3 +1,6 @@
+footer {
+  background-color: rgb(247, 245, 245);
+}
 footer .Footerlogo {
   font-size: 50px;
   font-weight: 900;
@@ -15,8 +18,30 @@ footer .Footerlogo {
   font-size: 25px;
 }
 .FooterSection1 {
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   justify-content: space-around;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(206, 202, 202);
+  padding-bottom: 30px;
+}
+.FooterAddress {
+  color: rgb(151, 149, 149);
+  font-size: 20px;
+  padding-top: 20px;
+}
+.FooterSection2 {
+  padding-top: 20px;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 80px;
+  justify-content: space-between;
+}
+
+.PaymentMethod button {
+  border: none;
+  border-radius: 20px;
+}
+.PaymentMethod img {
+  border-radius: 20px;
 }
