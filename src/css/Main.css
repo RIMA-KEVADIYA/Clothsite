@@ -36,7 +36,7 @@ body {
     font-size: 55px;
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+/* @media screen and (max-width: 1425) and (min-width: 1006) {
   .SignUpLink {
     font-size: 35px;
   }
@@ -66,12 +66,64 @@ body {
     padding-top: 30px;
   }
   .LatestOffer {
-    width: 850px;
     margin-left: 50px;
+  }
+} */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .SignUpLink {
+    font-size: 35px;
+  }
+  .NavLinks {
+    display: none;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainText {
+    margin-left: 70px;
+    margin-right: 30px;
+  }
+  .Counting {
+    gap: 50px;
+  }
+  .MainImage {
+    text-align: center;
+  }
+  .cloth_Section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-top: 0px;
+  }
+  .cloth_Section div {
+    padding-top: 30px;
+  }
+  .LatestOffer {
+    margin-left: 50px;
+  }
+  .FooterSection1 {
+    display: grid !important;
+    grid-template-columns: repeat(4, auto);
+  }
+  .LinkHead {
+    padding-top: 30px;
+  }
+  .FooterSection2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .FooterAddress {
+    text-align: center;
+  }
+  .PaymentMethod {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 700px) {
+@media screen and (max-width: 768px) and (min-width: 425px) {
   body {
     overflow-x: hidden;
   }
@@ -138,7 +190,7 @@ body {
   }
   .LatestOffer {
     display: flex;
-    width: 550px;
+
     justify-content: center;
   }
 
@@ -168,6 +220,11 @@ body {
   .FooterAddress {
     margin-left: 20px;
   }
+  .PaymentMethod {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
   .PaymentMethod img {
     width: 60px;
     margin-left: 20px;
@@ -175,7 +232,7 @@ body {
   }
 }
 
-@media screen and (max-width: 425px) and (min-width: 400px) {
+@media screen and (max-width: 425px) and (min-width: 374px) {
   body {
     overflow-x: hidden;
   }
