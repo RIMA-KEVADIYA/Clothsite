@@ -325,7 +325,7 @@ body {
   }
   .SignUpLink {
     width: 100% !important;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
   }
   .Navlogo {
@@ -345,6 +345,7 @@ body {
     display: none;
   }
   .MainText {
+    padding-top: 80px;
     text-align: center;
   }
   .CartButton img {
@@ -384,6 +385,8 @@ body {
     grid-template-columns: auto;
   }
   .LatestOffer {
+    display: flex;
+    justify-content: center;
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
@@ -429,7 +432,7 @@ body {
   }
   .SignUpLink {
     width: 100% !important;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
   }
   .cloth_Section div {
@@ -499,6 +502,8 @@ body {
     grid-template-columns: auto;
   }
   .LatestOffer {
+    display: flex;
+    justify-content: center;
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
