@@ -10,7 +10,7 @@ body {
   color: white;
   text-align: center;
   padding: 5px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .SignUpLink a {
   color: white;
@@ -70,6 +70,9 @@ body {
   }
 } */
 @media screen and (max-width: 1305px) and (min-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   .SignUpLink {
     font-size: 35px;
   }
@@ -312,7 +315,7 @@ body {
     padding-bottom: 0px;
   }
 }
-@media screen and (max-width: 425px) and (min-width: 374px) {
+@media screen and (max-width: 425px) and (min-width: 376px) {
   body {
     overflow-x: hidden;
   }
@@ -503,8 +506,7 @@ body {
     text-align: center;
   }
   .FooterSection1 {
-    display: flex;
-    flex-direction: column;
+    display: grid !important;
   }
   .LinksList {
     margin-left: 70px;

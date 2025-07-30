@@ -4,12 +4,11 @@ header {
 .Navlogo {
   font-style: Sans-serif;
   font-weight: 900;
-  font-size: 50px;
-}
-.Navlogo {
+  font-size: 40px;
   display: flex;
   justify-content: space-between;
 }
+
 .ShopLink {
   position: relative;
 }
