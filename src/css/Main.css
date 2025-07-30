@@ -17,7 +17,7 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1025px) {
+@media screen and (max-width: 1440px) and (min-width: 1304px) {
   .SignUpLink {
     font-size: 35px;
   }
@@ -26,7 +26,7 @@ body {
     margin-right: 30px;
   }
   .LatestOffer {
-    width: 1300px;
+    width: auto;
     margin-left: 30px;
   }
   .ProDes {
@@ -69,7 +69,7 @@ body {
     margin-left: 50px;
   }
 } */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1305px) and (min-width: 767px) {
   .SignUpLink {
     font-size: 35px;
   }
@@ -98,6 +98,11 @@ body {
   .cloth_Section div {
     padding-top: 30px;
   }
+  .Brands {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
   .LatestOffer {
     margin-left: 50px;
   }
@@ -123,7 +128,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 425px) {
+@media screen and (max-width: 768px) and (min-width: 549px) {
   body {
     overflow-x: hidden;
   }
@@ -221,8 +226,8 @@ body {
     margin-left: 20px;
   }
   .PaymentMethod {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     width: auto;
   }
   .PaymentMethod img {
@@ -231,7 +236,79 @@ body {
     margin-right: 20px;
   }
 }
-
+@media screen and (max-width: 550px) and (min-width: 426px) {
+  body {
+    overflow-x: hidden;
+  }
+  .Search {
+    display: none;
+  }
+  .NavLinks {
+    display: none;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column;
+  }
+  #MainImage {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .cloth_Section {
+    display: grid;
+  }
+  .FooterSection1 {
+    display: grid !important;
+    grid-template-columns: repeat(2, auto);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .Brands {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .FooterSection2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .LinksList {
+    padding-top: 30px;
+  }
+  .PaymentMethod {
+    padding-top: 20px;
+  }
+  .PaymentMethod {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+  .Counting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .full-width {
+    grid-column: 1/ 3;
+  }
+  .FooterAddress {
+    margin-left: 0px;
+  }
+  .LatestOffer {
+    display: flex;
+    justify-content: center;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .MainText {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .cloth_Section div {
+    padding-top: 30px;
+  }
+  .ItemsText {
+    padding-bottom: 0px;
+  }
+}
 @media screen and (max-width: 425px) and (min-width: 374px) {
   body {
     overflow-x: hidden;
