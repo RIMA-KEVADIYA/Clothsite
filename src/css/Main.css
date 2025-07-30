@@ -226,12 +226,13 @@ body {
     margin-left: 20px;
   }
   .PaymentMethod {
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, auto);
     width: auto;
   }
   .PaymentMethod img {
-    width: 60px;
+    width: auto;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -268,6 +269,8 @@ body {
     grid-template-columns: repeat(2, auto);
   }
   .FooterSection2 {
+    margin-left: 20px !important;
+
     display: flex;
     flex-direction: column;
   }
