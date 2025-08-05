@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/css/Main.css" />
     <link rel="stylesheet" href="./src/css/Footer.css" />
     <link rel="stylesheet" type="image/x-icon" href="./images/favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -102,26 +103,26 @@
         <div>
           <p class="ItemsText">NEW ARRIVALS</p>
         </div>
-        <div class="cloth_Section">
-          <div>
+        <div id="clothh" class="cloth_Section">
+          <div class="products">
             <button class="Product1"><img src="./images/tshirt.jpg" /></button>
             <p class="ProDes">T-shirt with Tape Details</p>
             <p class="Rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             <p class="Price">$120</p>
           </div>
-          <div>
+          <div class="products">
             <button class="Product1"><img src="./images/jeans.png" /></button>
             <p class="ProDes">Mom Fit Jeans</p>
             <p class="Rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             <p class="Price">$240</p>
           </div>
-          <div>
+          <div class="products">
             <button class="Product1"><img src="./images/shirts.png" /></button>
             <p class="ProDes">Checkered Shirts</p>
             <p class="Rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             <p class="Price">$180</p>
           </div>
-          <div>
+          <div class="products">
             <button class="Product1">
               <img src="./images/stripped.png" />
             </button>
@@ -129,7 +130,7 @@
             <p class="Rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             <p class="Price">$130</p>
           </div>
-          <div>
+          <div class="products">
             <button class="Product1">
               <img src="./images/woolen.png" />
             </button>
@@ -137,10 +138,37 @@
             <p class="Rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             <p class="Price">$150</p>
           </div>
+
+          <div class="products">
+            <button class="Product1">
+              <img src="./images/tshirt.jpg" />
+            </button>
+            <p class="ProDes">T-shirt with Tape Details</p>
+            <p class="Rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p class="Price">$120</p>
+          </div>
+          <div class="products">
+            <button class="Product1"><img src="./images/jeans.png" /></button>
+            <p class="ProDes">Mom Fit Jeans</p>
+            <p class="Rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p class="Price">$240</p>
+          </div>
+          <div class="products">
+            <button class="Product1">
+              <img src="./images/shirts.png" />
+            </button>
+            <p class="ProDes">Checkered Shirts</p>
+            <p class="Rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p class="Price">$180</p>
+          </div>
         </div>
       </section>
       <section class="viewbtn">
-        <button class="viewall">View All</button>
+        <button id="viewmore" class="viewall">View All</button>
+        <span
+          >Showing <span id="card-count"></span> of
+          <span id="card-total"></span> cards
+        </span>
       </section>
 
       <section>
