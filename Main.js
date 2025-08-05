@@ -30,10 +30,8 @@ const cardIncrease = 5;
 let currentPage = 1;
 let allProducts = [];
 
-// ✅ FREE fake API (no login needed)
 const API_URL = "https://fakestoreapi.com/products";
 
-// Create one product card
 const createProductCard = (product) => {
   const wrapper = document.createElement("div");
   wrapper.className = "card";
@@ -65,7 +63,6 @@ const createProductCard = (product) => {
   return wrapper;
 };
 
-// Display 5 products at a time
 const addCards = () => {
   const start = (currentPage - 1) * cardIncrease;
   const end = currentPage * cardIncrease;
@@ -91,7 +88,6 @@ const addCards = () => {
   }
 };
 
-// Fetch product data from the API
 const fetchProducts = async () => {
   try {
     const response = await fetch(API_URL);
@@ -103,8 +99,8 @@ const fetchProducts = async () => {
   }
 };
 
-// Start when the page is ready
 window.onload = () => {
   fetchProducts();
+
   loadMoreButton.addEventListener("click", addCards);
 };

@@ -60,6 +60,15 @@
 .products {
   display: none;
 }
+.card {
+  width: min-content;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+}
 .ItemsText {
   font-weight: 900;
   text-align: center;

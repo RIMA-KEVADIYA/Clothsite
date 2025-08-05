@@ -16,11 +16,6 @@ body {
   color: white;
   text-decoration: none;
 }
-.column {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 @media screen and (max-width: 1440px) and (min-width: 1304px) {
   .SignUpLink {
@@ -133,9 +128,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .card {
-    width: min-content;
-  }
+
   .MainText {
     padding-top: 60px;
     margin-left: 50px;
