@@ -43,39 +43,6 @@ body {
 .viewall:hover .onlick {
   display: inline-block;
 }
-/* @media screen and (max-width: 1425) and (min-width: 1006) {
-  .SignUpLink {
-    font-size: 35px;
-  }
-  .NavLinks {
-    display: none;
-  }
-  .Content {
-    display: flex;
-    flex-direction: column;
-  }
-  .MainText {
-    margin-left: 70px;
-    margin-right: 30px;
-  }
-  .Counting {
-    gap: 50px;
-  }
-  .MainImage {
-    text-align: center;
-  }
-  .cloth_Section {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    padding-top: 0px;
-  }
-  .cloth_Section div {
-    padding-top: 30px;
-  }
-  .LatestOffer {
-    margin-left: 50px;
-  }
-} */
 @media screen and (max-width: 1305px) and (min-width: 767px) {
   body {
     overflow-x: hidden;
