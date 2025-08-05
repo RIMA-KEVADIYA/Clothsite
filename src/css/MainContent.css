@@ -69,8 +69,10 @@
 .Product1 {
   border: none;
   border-radius: 20px;
+  height: 259px;
 }
 .Product1 img {
+  height: 259px;
   border-radius: 20px;
   width: -webkit-fill-available;
 }
