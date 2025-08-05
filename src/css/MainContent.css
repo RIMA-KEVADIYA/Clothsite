@@ -57,6 +57,9 @@
 .MainText {
   padding-top: 190px;
 }
+.products {
+  display: none;
+}
 .ItemsText {
   font-weight: 900;
   text-align: center;
@@ -94,6 +97,10 @@
   padding: 10px 40px;
   border-radius: 30px;
   font-size: 20px;
+}
+#viewmore.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 .viewbtn {
   padding-top: 40px;
