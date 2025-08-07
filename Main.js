@@ -79,10 +79,10 @@ const createProductCard = (product) => {
     customDescription = "Full HD IPS Ultra-Thin";
   }
   if (product.id === 14) {
-    customDescription = "Samsung Super Ultrawide Screen";
+    customDescription = "Samsung Ultrawide Screen";
   }
   if (product.id === 15) {
-    customDescription = " Snowboard Jacket Winter Coats";
+    customDescription = " Snowboard Winter Coats";
   }
 
   desc.textContent = customDescription;
