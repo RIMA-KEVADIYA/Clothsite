@@ -87,7 +87,6 @@ const createProductCard = (product) => {
 
   desc.textContent = customDescription;
   wrapper.appendChild(desc);
-  /**? */
 
   const rating = document.createElement("p");
   rating.className = "Rating";
