@@ -26,7 +26,7 @@
 const cardContainer = document.getElementById("clothh");
 const loadMoreButton = document.getElementById("viewmore");
 
-const cardIncrease = 1;
+const cardIncrease = 2;
 let currentPage = 1;
 let allProducts = [];
 
@@ -59,6 +59,21 @@ const createProductCard = (product) => {
   }
   if (product.id === 5) {
     customDescription = "Silver Dragon Bracelet";
+  }
+  if (product.id === 8) {
+    customDescription = "Gold Plated Kada";
+  }
+  if (product.id === 9) {
+    customDescription = "Hard Drive - USB 3.0";
+  }
+  if (product.id === 10) {
+    customDescription = "SanDisk SSD PLUS";
+  }
+  if (product.id === 11) {
+    customDescription = "Silicon Power 256GB SSD";
+  }
+  if (product.id === 12) {
+    customDescription = "Portable External Hard Drive";
   }
   desc.textContent = customDescription;
   wrapper.appendChild(desc);
