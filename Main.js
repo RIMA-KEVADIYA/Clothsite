@@ -26,7 +26,7 @@
 const cardContainer = document.getElementById("clothh");
 const loadMoreButton = document.getElementById("viewmore");
 
-const cardIncrease = 5;
+const cardIncrease = 1;
 let currentPage = 1;
 let allProducts = [];
 
@@ -34,7 +34,7 @@ const API_URL = "https://fakestoreapi.com/products";
 
 const createProductCard = (product) => {
   const wrapper = document.createElement("div");
-  wrapper.className = "card";
+  wrapper.className = "products"; // Changed from "card" to "products"
 
   const button = document.createElement("button");
   button.className = "Product1";
@@ -48,6 +48,21 @@ const createProductCard = (product) => {
   desc.className = "ProDes";
   desc.textContent = product.title;
   wrapper.appendChild(desc);
+  /**? */
+  let customDescription = product.title;
+
+  if (product.id === 1) {
+    customDescription = "Travel Backpack";
+  }
+  if (product.id === 2) {
+    customDescription = "Mens Casual T-shirts";
+  }
+  if (product.id === 5) {
+    customDescription = "Silver Dragon Bracelet";
+  }
+  desc.textContent = customDescription;
+  wrapper.appendChild(desc);
+  /**? */
 
   const rating = document.createElement("p");
   rating.className = "Rating";
@@ -69,15 +84,10 @@ const addCards = () => {
   const sliced = allProducts.slice(start, end);
 
   if (sliced.length > 0) {
-    const column = document.createElement("div");
-    column.className = "column";
-
     sliced.forEach((product) => {
       const card = createProductCard(product);
-      column.appendChild(card);
+      cardContainer.appendChild(card); // Directly append to cardContainer
     });
-
-    cardContainer.appendChild(column);
   }
 
   currentPage++;
@@ -101,6 +111,5 @@ const fetchProducts = async () => {
 
 window.onload = () => {
   fetchProducts();
-
   loadMoreButton.addEventListener("click", addCards);
 };

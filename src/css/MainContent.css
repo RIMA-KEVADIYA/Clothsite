@@ -57,9 +57,7 @@
 .MainText {
   padding-top: 190px;
 }
-.products {
-  display: none;
-}
+
 .card {
   width: min-content;
 }
@@ -67,13 +65,12 @@
 .column {
   display: flex;
   justify-content: space-between;
-  justify-content: space-around;
 }
 .ItemsText {
   font-weight: 900;
   text-align: center;
   font-size: 50px;
-  padding: 50px 0px 30px 0px;
+  padding: 50px 0px 0px 0px;
 }
 .Product1 {
   border: none;
@@ -96,6 +93,19 @@
 .Price {
   font-size: 20px;
 }
+.products {
+  padding-top: 30px;
+}
+#clothh {
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+/* #clothh .products {
+  width: 400px;
+} */
 .cloth_Section {
   display: flex;
   justify-content: space-between;
