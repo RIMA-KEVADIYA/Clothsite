@@ -26,7 +26,7 @@
 const cardContainer = document.getElementById("clothh");
 const loadMoreButton = document.getElementById("viewmore");
 
-const cardIncrease = 2;
+const cardIncrease = 5;
 let currentPage = 1;
 let allProducts = [];
 
@@ -75,6 +75,16 @@ const createProductCard = (product) => {
   if (product.id === 12) {
     customDescription = "Portable External Hard Drive";
   }
+  if (product.id === 13) {
+    customDescription = "Full HD IPS Ultra-Thin";
+  }
+  if (product.id === 14) {
+    customDescription = "Samsung Super Ultrawide Screen";
+  }
+  if (product.id === 15) {
+    customDescription = " Snowboard Jacket Winter Coats";
+  }
+
   desc.textContent = customDescription;
   wrapper.appendChild(desc);
   /**? */
@@ -117,7 +127,7 @@ const fetchProducts = async () => {
   try {
     const response = await fetch(API_URL);
     const data = await response.json();
-    allProducts = data;
+    allProducts = data.slice(0, 15);
     addCards(); // show first 5 products
   } catch (error) {
     console.error("Error fetching products:", error);
