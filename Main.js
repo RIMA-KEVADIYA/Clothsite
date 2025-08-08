@@ -48,7 +48,7 @@ const createProductCard = (product) => {
   desc.className = "ProDes";
   desc.textContent = product.title;
   wrapper.appendChild(desc);
-  /**? */
+
   let customDescription = product.title;
 
   if (product.id === 1) {
