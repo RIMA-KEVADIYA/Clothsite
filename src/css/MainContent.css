@@ -105,6 +105,12 @@
   display: grid;
   grid-template-columns: repeat(5, auto);
 }
+#clothh1 {
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
 
 .cloth_Section {
   display: flex;

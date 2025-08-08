@@ -77,6 +77,10 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
   }
+  #clothh1 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
   .cloth_Section {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -177,6 +181,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
+  #clothh1 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
   .cloth_Section {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -248,6 +256,10 @@ body {
     max-width: 100%;
   }
   #clothh {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #clothh1 {
     display: grid;
     grid-template-columns: auto;
   }
@@ -363,6 +375,10 @@ body {
     display: grid;
     grid-template-columns: auto;
   }
+  #clothh1 {
+    display: grid;
+    grid-template-columns: auto;
+  }
   .cloth_Section {
     display: grid;
     padding-top: 0px;
@@ -437,6 +453,10 @@ body {
     margin-bottom: 30px;
   }
   #clothh {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #clothh1 {
     display: grid;
     grid-template-columns: auto;
   }
@@ -597,6 +617,10 @@ body {
     grid-template-columns: auto;
   }
   #clothh {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #clothh1 {
     display: grid;
     grid-template-columns: auto;
   }
