@@ -28,7 +28,7 @@ const loadMoreButton = document.getElementById("viewmore");
 
 const cardIncrease = 5;
 let currentPage = 1;
-const API_URL = "https://fakestoreapi.com/products";
+const API_URL = "https://fakestoreapi.com/products?limit=15";
 
 const createProductCard = (product) => {
   const wrapper = document.createElement("div");
