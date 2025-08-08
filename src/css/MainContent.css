@@ -132,3 +132,14 @@
   background-color: black;
   color: white;
 }
+.products {
+  animation: shimmer 1s infinite;
+}
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
