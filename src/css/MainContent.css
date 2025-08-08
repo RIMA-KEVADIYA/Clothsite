@@ -1,5 +1,6 @@
 .MText {
   font-size: 45px;
+
   font-weight: 900;
 }
 .DesText {
@@ -56,6 +57,7 @@
 }
 .MainText {
   padding-top: 190px;
+  padding-bottom: 30px;
 }
 
 .card {

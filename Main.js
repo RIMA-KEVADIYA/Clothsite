@@ -23,8 +23,8 @@
 // // Load more on click
 // loadMoreBtn.addEventListener("click", showNextProducts);
 
-const cardContainer = document.getElementById("clothh");
-const loadMoreButton = document.getElementById("viewmore");
+const cardContainer = document.getElementById("clothh", "clothh2");
+const loadMoreButton = document.getElementById("viewmore", "viewmore2");
 
 const cardIncrease = 5;
 let currentPage = 1;
