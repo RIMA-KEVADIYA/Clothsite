@@ -104,9 +104,6 @@
   grid-template-columns: repeat(5, auto);
 }
 
-/* #clothh .products {
-  width: 400px;
-} */
 .cloth_Section {
   display: flex;
   justify-content: space-between;
