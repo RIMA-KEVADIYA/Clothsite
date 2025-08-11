@@ -94,7 +94,7 @@ const loadMoreButton1 = document.getElementById("view1");
 
 const Increase = 5;
 let currentpage = 1;
-const API_url = "https://api.escuelajs.co/api/v1/products?limit=15";
+const API_url = "https://api.escuelajs.co/api/v1/products?";
 
 const createProduct = (product) => {
   const wrapper = document.createElement("div");
@@ -104,6 +104,15 @@ const createProduct = (product) => {
   button.className = "Product1";
 
   const img = document.createElement("img");
+  if (product.id === 16) {
+    img.src = "https://via.placeholder.com/150"; // Placeholder image
+  }
+  if (product.id === 2) {
+    imageUrl = "./images/relaxpants.png"; // your custom image
+  }
+  if (product.id === 16) {
+    imageUrl = "https://example.com/custom-image.jpg"; // your custom image
+  }
   img.src = product.image;
   button.appendChild(img);
   wrapper.appendChild(button);
@@ -112,17 +121,16 @@ const createProduct = (product) => {
   desc.className = "ProDes";
 
   let customDescription = product.title;
-  if (product.id === 1) customDescription = "Travel Backpack";
-  else if (product.id === 2) customDescription = "Mens Casual T-shirts";
-  else if (product.id === 5) customDescription = "Silver Dragon Bracelet";
-  else if (product.id === 6) customDescription = "Solid Gold Micropave";
-  else if (product.id === 7) customDescription = "White Gold Plated Ring";
+  if (product.id === 1) customDescription = "Graphic T-Shirt";
+  else if (product.id === 2) customDescription = "Pullover Hoodie";
+  else if (product.id === 16) customDescription = "Classic Style Comfort";
+  else if (product.id === 145) customDescription = "Red Baseball Cap";
   else if (product.id === 8) customDescription = "Gold Plated Kada";
   else if (product.id === 9) customDescription = "Hard Drive - USB 3.0";
   else if (product.id === 10) customDescription = "SanDisk SSD PLUS";
   else if (product.id === 11) customDescription = "Silicon 256GB SSD";
   else if (product.id === 12) customDescription = "Portable Hard Drive";
-  else if (product.id === 13) customDescription = "Full HD IPS Ultra-Thin";
+  else if (product.id === 13) customDescription = "HD IPS Ultra-Thin";
   else if (product.id === 14) customDescription = "Ultrawide Screen";
   else if (product.id === 15) customDescription = "Snowboard  Coats";
   else customDescription = product.title;
