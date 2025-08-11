@@ -39,7 +39,12 @@
   height: 40px;
 }
 .MainImage img {
+  max-width: 100%;
+  display: block;
   height: 600px;
+}
+.MainImage {
+  padding-top: 10px;
 }
 
 .Content {
@@ -58,7 +63,7 @@
 }
 .MainText {
   padding-top: 190px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .card {

@@ -218,7 +218,6 @@ const createProduct = (product) => {
   else if (product.id === 10) customDescription = "SanDisk SSD PLUS";
   else if (product.id === 11) customDescription = "Silicon 256GB SSD";
   else if (product.id === 12) customDescription = "Portable Hard Drive";
-  else if (product.id === 13) customDescription = "Full HD IPS Ultra-Thin";
   else if (product.id === 14) customDescription = "Ultrawide Screen";
   else if (product.id === 15) customDescription = "Snowboard Coats";
   else if (product.id === 16) customDescription = "Leather Jacket";
