@@ -31,6 +31,7 @@ footer .Footerlogo {
   padding-top: 20px;
 }
 .FooterSection2 {
+  padding-bottom: 10px;
   padding-top: 20px;
   display: flex;
   margin-left: 100px;
@@ -43,5 +44,6 @@ footer .Footerlogo {
   border-radius: 20px;
 }
 .PaymentMethod img {
+  height: 40px;
   border-radius: 20px;
 }

@@ -194,8 +194,8 @@ const cardContainer1 = document.getElementById("clothh1");
 
 const loadMoreButton1 = document.getElementById("view2");
 
-const Increase = 1;
-let currentpage = 10;
+const Increase = 5;
+let currentpage = 3;
 const API_url = "https://fakestoreapi.com/products?limit=20";
 
 const createProduct = (product) => {
