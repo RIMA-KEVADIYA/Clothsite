@@ -1,7 +1,11 @@
 header {
-  background-color: rgb(250, 248, 248);
+  background-color: white;
+  border-bottom: 1px solid rgb(250, 248, 248);
+  position: sticky;
+  top: 0;
 }
 .Navlogo {
+  padding-top: 7px;
   font-style: Sans-serif;
   font-weight: 900;
   font-size: 40px;
@@ -40,6 +44,7 @@ header {
 }
 #SearchBar {
   margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 20px;
   border: none;
   background-color: rgb(233, 231, 228);
@@ -49,6 +54,9 @@ header {
 }
 .CartContact {
   margin-top: 10px;
+}
+.CartContact a img {
+  height: 40px;
 }
 .CartButton {
   border: none;
