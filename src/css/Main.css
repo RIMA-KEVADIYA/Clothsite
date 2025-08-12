@@ -29,7 +29,7 @@ body {
 }
 @media screen and (max-width: 1443px) and (min-width: 1304px) {
   .SignUpLink {
-    font-size: 35px;
+    font-size: 28px;
   }
   .Content {
     margin-left: 40px;
@@ -38,6 +38,12 @@ body {
   .LatestOffer {
     width: auto;
     margin-left: 30px;
+  }
+  .ShopLink:hover .dropdown-content {
+    display: block;
+    border: none;
+    width: auto;
+    background-color: white;
   }
   .ProDes {
     font-size: 23px;
@@ -59,7 +65,7 @@ body {
     overflow-x: hidden;
   }
   .SignUpLink {
-    font-size: 35px;
+    font-size: 28px;
   }
   .NavLinks {
     display: none;
@@ -67,6 +73,12 @@ body {
   .Content {
     display: flex;
     flex-direction: column;
+  }
+  .ShopLink:hover .dropdown-content {
+    display: block;
+    border: none;
+    width: auto;
+    background-color: white;
   }
   .MainText {
     padding-top: 70px;
