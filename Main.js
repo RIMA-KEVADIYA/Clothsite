@@ -90,6 +90,27 @@
 //   loadMoreButton.addEventListener("click", addCards);
 // };
 
+/* animated counter */
+const counter = document.querySelectorAll(".Count");
+const speed = 200;
+counter.forEach((countt) => {
+  const updateCount = () => {
+    const target = +countt.getAttribute("data-target");
+    const count = +countt.innerText;
+
+    const inc = target / speed;
+
+    if (count < target) {
+      countt.innerText = count + inc;
+      setTimeout(updateCount, 1);
+    } else {
+      count.innerText = target;
+    }
+  };
+  updateCount();
+});
+
+/* new arrival items */
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("clothh");
   const loadMoreButton = document.getElementById("view1");
