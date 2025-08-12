@@ -16,7 +16,7 @@ header {
 .ShopLink {
   position: relative;
 }
-.ShopLink .dropdown {
+.dropdown {
   position: absolute;
 }
 
@@ -32,8 +32,9 @@ header {
 .dropdown {
   display: none;
 }
-.ShopLink:hover .dropdown {
+.ShopLink:hover .dropdown-content {
   display: block;
+  border: none;
   width: auto;
   background-color: rgb(238, 235, 235);
   border: 1px solid black;
@@ -52,6 +53,26 @@ header {
   padding: 5px 50px 5px 10px;
   background-image: url("./images/searchicon.png");
 }
+.dropdown-content {
+  display: none;
+  font-size: 10px;
+  padding-left: 10px;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  background-color: rgb(248, 247, 247);
+  font-size: 20px;
+  line-height: 30px;
+  border: none !important;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border: none;
+}
 .CartContact {
   margin-top: 10px;
 }
@@ -62,6 +83,7 @@ header {
   border: none;
 }
 li a {
+  display: block;
   color: black;
   text-decoration: none;
   font-size: 25px;

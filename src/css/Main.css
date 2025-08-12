@@ -21,7 +21,12 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1304px) {
+@media screen and (max-width: 1587px) and (min-width: 1444px) {
+  .MainText {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1443px) and (min-width: 1304px) {
   .SignUpLink {
     font-size: 35px;
   }
@@ -155,6 +160,7 @@ body {
     margin-right: 30px;
   }
   #MainImage {
+    margin-left: 12%;
     object-fit: cover;
     max-width: 100%;
   }
