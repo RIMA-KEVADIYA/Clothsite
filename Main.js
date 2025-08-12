@@ -96,12 +96,12 @@ const speed = 200;
 counter.forEach((countt) => {
   const updateCount = () => {
     const target = +countt.getAttribute("data-target");
-    const count = +countt.innerText;
+    const count = Number(countt.innerText?.replace("+", ""));
 
     const inc = target / speed;
 
     if (count < target) {
-      countt.innerText = count + inc;
+      countt.innerText = count + inc + "+";
       setTimeout(updateCount, 1);
     } else {
       count.innerText = target;
