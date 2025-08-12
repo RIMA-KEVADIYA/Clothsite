@@ -64,14 +64,51 @@
   padding: 15px;
   font-size: 40px;
 }
+
+.Brands li {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.Brands .versace {
+  font-family: "Cinzel", serif;
+}
+
+.Brands .zara {
+  font-family: "Abril Fatface", serif;
+}
+
+.Brands .gucci {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.Brands .prada {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.Brands .ck {
+  font-family: "Courier New", sans-serif;
+  text-transform: none; /* Calvin Klein uses normal casing */
+}
+.Brands .hm {
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  text-transform: none;
+}
 .MainText {
   padding-top: 100px;
 }
-
+.count1 {
+  padding-right: 30px;
+}
 .card {
   width: min-content;
 }
-
+.border1 {
+  border-right: 1px solid rgb(224, 222, 222);
+}
 .column {
   display: flex;
   justify-content: space-between;

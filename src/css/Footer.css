@@ -6,10 +6,12 @@ footer .Footerlogo {
   font-weight: 900;
 }
 .FooterDes {
+  padding-top: 10px;
   color: rgb(151, 149, 149);
   font-size: 20px;
 }
 .FooterLinks {
+  padding-top: 10px;
   color: rgb(151, 149, 149);
   list-style-type: none;
   font-size: 20px;
