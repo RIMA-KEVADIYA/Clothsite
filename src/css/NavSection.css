@@ -29,6 +29,7 @@ header {
   vertical-align: baseline;
   gap: 60px;
 }
+
 .dropdown {
   display: none;
 }
