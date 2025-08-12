@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -553,6 +554,10 @@ body {
     display: grid;
     grid-template-columns: auto;
   }
+  .Brands li {
+    display: flex;
+    justify-content: center;
+  }
   .LatestOffer {
     display: flex;
     justify-content: center;
@@ -639,8 +644,15 @@ body {
     max-width: 100%;
   }
   .Brands {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: auto;
+  }
+  .Brands li {
+    display: flex;
+    justify-content: center;
   }
   .cloth_Section {
     display: grid !important;
