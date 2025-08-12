@@ -18,6 +18,7 @@ header {
 }
 .dropdown {
   position: absolute;
+  display: none;
 }
 
 .NavLinks {
@@ -30,9 +31,6 @@ header {
   gap: 60px;
 }
 
-.dropdown {
-  display: none;
-}
 .ShopLink:hover .dropdown-content {
   display: block;
   border: none;
@@ -60,6 +58,7 @@ header {
   padding-left: 10px;
   position: absolute;
   background-color: white;
+  border: none;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
