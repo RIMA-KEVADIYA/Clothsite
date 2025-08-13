@@ -66,13 +66,14 @@ body {
     overflow-x: hidden;
   }
   .SignUpLink {
-    font-size: 28px;
+    font-size: 16px;
   }
   .NavLinks {
     display: none;
   }
   .Content {
     display: flex;
+    gap: 60px;
     flex-direction: column;
   }
   .ShopLink:hover .dropdown-content {
@@ -151,7 +152,7 @@ body {
   }
   .SignUpLink {
     width: 100%;
-    font-size: 30px;
+    font-size: 16px;
   }
   .NavLinks {
     display: none;
@@ -165,6 +166,7 @@ body {
   }
   .Content {
     display: flex;
+    gap: 50px;
     flex-direction: column;
   }
 
@@ -179,7 +181,7 @@ body {
     max-width: 100%;
   }
   .MText {
-    font-size: 45px;
+    font-size: 50px;
   }
   #SearchBar {
     padding-right: 0px;
@@ -188,14 +190,14 @@ body {
     padding-bottom: 10px;
   }
   .DesText {
-    font-size: 28px;
+    font-size: 16px;
   }
   .Counting {
     margin-left: 5px;
     margin-right: 50px;
   }
   .CountDes {
-    font-size: 26px;
+    font-size: 16px;
   }
   .MainImage {
     text-align: center;
@@ -253,19 +255,19 @@ body {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
+
   .FooterAddress {
     margin-left: 20px;
   }
   .PaymentMethod {
     padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
     width: auto;
   }
   .PaymentMethod img {
     width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 @media screen and (max-width: 550px) and (min-width: 426px) {
@@ -323,6 +325,11 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
   }
+  .PaymentMethod {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+  }
   .Counting {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -362,7 +369,7 @@ body {
   }
   .SignUpLink {
     width: 100% !important;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
   .Navlogo {
@@ -370,10 +377,10 @@ body {
     padding-top: 10px;
   }
   .MText {
-    font-size: 43px;
+    font-size: 48px;
   }
   .DesText {
-    font-size: 25px;
+    font-size: 16px;
   }
   .Search {
     display: none;
@@ -392,7 +399,7 @@ body {
     font-size: 28px;
   }
   .CountDes {
-    font-size: 28px;
+    font-size: 16px;
   }
   .Counting {
     display: flex;
@@ -400,6 +407,7 @@ body {
   }
   .Content {
     display: flex;
+    gap: 40px;
     flex-direction: column;
   }
   #clothh {
@@ -415,6 +423,7 @@ body {
     padding-top: 0px;
   }
   .Brands {
+    text-align: center;
     display: grid;
     grid-template-columns: auto;
   }
@@ -434,6 +443,11 @@ body {
     justify-content: center;
     margin-left: 5px !important;
     margin-right: 5px !important;
+  }
+  .PaymentMethod {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
   }
   .OfferText {
     text-align: center;
@@ -466,8 +480,6 @@ body {
   }
   .PaymentMethod img {
     width: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 
@@ -532,6 +544,12 @@ body {
   .Counting {
     display: flex;
     flex-direction: column;
+  }
+  .PaymentMethod {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    justify-content: center;
   }
   .Content {
     display: flex;
@@ -599,8 +617,6 @@ body {
   }
   .PaymentMethod img {
     width: 60px;
-    margin-left: 15px;
-    margin-right: 20px;
   }
 }
 
@@ -678,7 +694,7 @@ body {
   }
   .PaymentMethod {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
   }
 
@@ -739,10 +755,11 @@ body {
   }
   .PaymentMethod button {
     max-width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   .PaymentMethod button img {
     max-width: 100%;
-    margin-left: 30px;
   }
   .visa {
     max-width: 100%;
