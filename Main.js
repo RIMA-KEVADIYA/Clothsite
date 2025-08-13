@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadProducts = async () => {
     try {
       const limit = currentPage * pageSize;
-      const response = await fetch(`${API_URL}?limit=${limit}`);
+      const response = await fetch(`${API_URL}`);
       const data = await response.json();
 
       // Slice only the new products to avoid duplicates
@@ -217,7 +217,7 @@ const loadMoreButton1 = document.getElementById("view2");
 
 const Increase = 5;
 let currentpage = 3;
-const API_url = "https://fakestoreapi.com/products?limit=20";
+const API_url = "https://api.escuelajs.co/api/v1/products";
 
 const createProduct = (product) => {
   const wrapper = document.createElement("div");
