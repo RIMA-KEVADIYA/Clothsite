@@ -1,13 +1,13 @@
 .MText {
-  font-size: 40px;
-
+  font-size: 60px;
   font-weight: 900;
+  line-height: 70px;
 }
 .DesText {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 35px;
+  padding-bottom: 15px;
   color: rgb(151, 149, 149);
-  font-size: 28px;
+  font-size: 16px;
 }
 .ShopNow {
   margin-top: 25px;
@@ -23,13 +23,13 @@
   font-weight: 700;
 }
 .CountDes {
-  font-size: 25px;
+  font-size: 16px;
   color: rgb(151, 149, 149);
 }
 .Counting {
   display: flex;
-  padding: 35px 0px 0px 0px;
-  gap: 40px;
+  padding: 40px 0px 0px 0px;
+  gap: 60px;
 }
 
 #RightStar {
@@ -52,7 +52,7 @@
 .Content {
   max-width: 100%;
   display: flex;
-
+  gap: 250px;
   justify-content: space-around;
 }
 .Brands {
@@ -135,11 +135,11 @@
   font-size: 20px;
 }
 .ProDes {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 .Price {
-  font-size: 20px;
+  font-size: 16px;
 }
 .products {
   padding-top: 30px;

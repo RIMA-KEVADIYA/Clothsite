@@ -8,13 +8,16 @@ footer .Footerlogo {
 .FooterDes {
   padding-top: 10px;
   color: rgb(151, 149, 149);
-  font-size: 20px;
+  font-size: 16px;
 }
 .FooterLinks {
   padding-top: 10px;
   color: rgb(151, 149, 149);
   list-style-type: none;
-  font-size: 20px;
+  font-size: 16px;
+}
+.FooterLinks li {
+  line-height: 30px;
 }
 .LinkHead {
   font-size: 25px;
@@ -29,7 +32,7 @@ footer .Footerlogo {
 }
 .FooterAddress {
   color: rgb(151, 149, 149);
-  font-size: 20px;
+  font-size: 16px;
   padding-bottom: 20px;
   padding-top: 20px;
 }

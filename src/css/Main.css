@@ -30,7 +30,7 @@ body {
 }
 @media screen and (max-width: 1443px) and (min-width: 1304px) {
   .SignUpLink {
-    font-size: 28px;
+    font-size: 16px;
   }
   .Content {
     margin-left: 40px;
@@ -47,7 +47,7 @@ body {
     background-color: white;
   }
   .ProDes {
-    font-size: 23px;
+    font-size: 16px;
   }
   .ItemsText {
     font-size: 55px;
@@ -477,7 +477,7 @@ body {
   }
   .SignUpLink {
     width: 100% !important;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
   .cloth_Section div {
@@ -506,24 +506,28 @@ body {
     display: none;
   }
   .MText {
-    font-size: 40px;
+    font-size: 50px;
   }
   .DesText {
-    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
   }
   .Count {
     font-size: 25px;
   }
   .CountDes {
-    font-size: 25px;
+    font-size: 16px;
   }
   .ItemsText {
     font-size: 40px;
     padding-top: 30px;
   }
   .MainText {
-    padding-top: 50px;
+    padding-top: 45px;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .Counting {
     display: flex;
@@ -531,6 +535,7 @@ body {
   }
   .Content {
     display: flex;
+    gap: 30px;
     flex-direction: column;
   }
   .viewall {
@@ -602,6 +607,7 @@ body {
 @media screen and (max-width: 320px) {
   body {
     overflow-x: hidden;
+    box-sizing: border-box;
   }
   .SignUpLink {
     width: 100% !important;
@@ -616,6 +622,7 @@ body {
   }
   .Content {
     display: flex;
+    gap: 20px;
     flex-direction: column;
   }
   .MainText {
@@ -669,6 +676,12 @@ body {
   .cloth_Section div {
     padding-top: 20px;
   }
+  .PaymentMethod {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+  }
+
   .Navlogo {
     font-size: 30px !important;
     padding-top: 10px;
@@ -677,10 +690,11 @@ body {
     height: 30px !important;
   }
   .MText {
-    font-size: 35px !important;
+    line-height: 50px;
+    font-size: 40px !important;
   }
   .DesText {
-    font-size: 20px !important;
+    font-size: 16px !important;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -723,8 +737,14 @@ body {
   .FooterAddress {
     text-align: center;
   }
-  .PaymentMethod img {
-    width: -webkit-fill-available;
+  .PaymentMethod button {
+    max-width: 100%;
+  }
+  .PaymentMethod button img {
+    max-width: 100%;
     margin-left: 30px;
+  }
+  .visa {
+    max-width: 100%;
   }
 }
