@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("clothh");
   const loadMoreButton = document.getElementById("view1");
 
-  const API_URL = "https://fakestoreapi.com/products?limit=15";
+  const API_URL = "https://fakestoreapi.com/products";
   const pageSize = 5;
   let currentPage = 1;
 
@@ -209,10 +209,8 @@ document.addEventListener("DOMContentLoaded", () => {
   loadProducts(); // initial load
 });
 
-/* -------------------------------------------------- */
-
+/* Top Arrivals */
 const cardContainer1 = document.getElementById("clothh1");
-
 const loadMoreButton1 = document.getElementById("view2");
 
 const Increase = 5;
@@ -227,7 +225,19 @@ const createProduct = (product) => {
   button.className = "Product1";
 
   const img = document.createElement("img");
-  img.src = product.image;
+
+  // Extract first image without using array index or methods
+  let firstImage;
+  for (let key in product.images) {
+    firstImage = product.images[key];
+    break;
+  }
+
+  img.src = firstImage || "https://via.placeholder.com/15";
+  img.onerror = () => {
+    img.src = "https://via.placeholder.com/15";
+  };
+
   button.appendChild(img);
   wrapper.appendChild(button);
 
@@ -235,19 +245,17 @@ const createProduct = (product) => {
   desc.className = "ProDes";
 
   let customDescription = product.title;
-  if (product.id === 13) customDescription = "Full HD IPS Ultra-Thin";
-  else if (product.id === 10) customDescription = "SanDisk SSD PLUS";
-  else if (product.id === 11) customDescription = "Silicon 256GB SSD";
-  else if (product.id === 12) customDescription = "Portable Hard Drive";
-  else if (product.id === 14) customDescription = "Ultrawide Screen";
-  else if (product.id === 15) customDescription = "Snowboard Coats";
-  else if (product.id === 16) customDescription = "Leather Jacket";
-  else if (product.id === 17) customDescription = "Striped Climbing Raincoats";
-  else if (product.id === 18) customDescription = "Boat Neck V";
-  else if (product.id === 19) customDescription = "Short Sleeve Moisture";
-  else if (product.id === 20) customDescription = "T Shirt Casual Cotton";
+  if (product.id === 11) customDescription = "Classic Red Cap";
+  else if (product.id === 12) customDescription = "Summer Black Cap";
+  else if (product.id === 14)
+    customDescription = " Classic High-Waisted Shorts";
+  else if (product.id === 15) customDescription = "White Crew Neck T-Shirt";
+  else if (product.id === 16) customDescription = "Style and Comfort";
+  else if (product.id === 18) customDescription = "Wireless Gaming Controller";
+  else if (product.id === 19)
+    customDescription = "Headphone & Inked Earbud Set";
+  else if (product.id === 20) customDescription = "Over-Ear Headphones";
   else if (product.id === 22) customDescription = "Wireless Computer Mouse";
-  else customDescription = product.title;
 
   desc.textContent = customDescription;
   wrapper.appendChild(desc);
@@ -271,29 +279,31 @@ const cards = async () => {
     const response = await fetch(API_url);
     const data = await response.json();
 
-    // Calculate slice indices based on currentpage and Increase
-    const start = (currentpage - 1) * Increase;
-    const end = currentpage * Increase;
-    const sliced = data.slice(start, end);
+    const startIndex = (currentpage - 1) * Increase;
+    const endIndex = currentpage * Increase;
+    let i = startIndex;
+    let addedCount = 0;
 
-    if (sliced.length === 0) {
-      loadMoreButton1.disabled = true;
-      loadMoreButton1.textContent = "No more products";
-      return;
-    }
-
-    sliced.forEach((product) => {
+    while (i < endIndex && i < data.length) {
+      const product = data[i];
       const card = createProduct(product);
       cardContainer1.appendChild(card);
-    });
+      i++;
+      addedCount++;
+    }
 
-    currentpage++;
+    if (addedCount === 0) {
+      loadMoreButton1.disabled = true;
+      loadMoreButton1.textContent = "No more products";
+    } else {
+      currentpage++;
+    }
   } catch (error) {
     console.error("Error fetching products:", error);
   }
 };
 
 window.onload = () => {
-  cards(); // Load first set of products on page load
+  cards(); // Load initial products
   loadMoreButton1.addEventListener("click", cards);
 };
