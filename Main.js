@@ -91,26 +91,28 @@
 // };
 
 /* animated counter */
+
+/* Counter Animation */
 const counter = document.querySelectorAll(".Count");
 const speed = 200;
+
 counter.forEach((countt) => {
   const updateCount = () => {
     const target = +countt.getAttribute("data-target");
     const count = Number(countt.innerText?.replace("+", ""));
-
     const inc = target / speed;
 
     if (count < target) {
-      countt.innerText = count + inc + "+";
+      countt.innerText = Math.ceil(count + inc) + "+";
       setTimeout(updateCount, 1);
     } else {
-      count.innerText = target;
+      countt.innerText = target + "+";
     }
   };
   updateCount();
 });
 
-/* new arrival items */
+/* New Arrival Items */
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("clothh");
   const loadMoreButton = document.getElementById("view1");
@@ -178,28 +180,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const loadProducts = async () => {
     try {
-      const limit = currentPage * pageSize;
-      const response = await fetch(`${API_URL}`);
+      const response = await fetch(API_URL);
       const data = await response.json();
 
-      // Slice only the new products to avoid duplicates
-      const newProducts = data.slice(
-        (currentPage - 1) * pageSize,
-        currentPage * pageSize
-      );
+      let startIndex = (currentPage - 1) * pageSize;
+      let count = 0;
 
-      if (newProducts.length === 0) {
-        loadMoreButton.disabled = true;
-        loadMoreButton.textContent = "No more products";
-        return;
-      }
-
-      newProducts.forEach((product) => {
+      while (count < pageSize && startIndex < data.length) {
+        const product = data[startIndex];
         const card = createCard(product);
         container.appendChild(card);
-      });
+        count++;
+        startIndex++;
+      }
 
-      currentPage++;
+      if (startIndex >= data.length) {
+        loadMoreButton.disabled = true;
+        loadMoreButton.textContent = "No more products";
+      } else {
+        currentPage++;
+      }
     } catch (error) {
       console.error("Error loading products:", error);
     }
@@ -246,6 +246,7 @@ const createProduct = (product) => {
   else if (product.id === 18) customDescription = "Boat Neck V";
   else if (product.id === 19) customDescription = "Short Sleeve Moisture";
   else if (product.id === 20) customDescription = "T Shirt Casual Cotton";
+  else if (product.id === 22) customDescription = "Wireless Computer Mouse";
   else customDescription = product.title;
 
   desc.textContent = customDescription;
@@ -265,7 +266,7 @@ const createProduct = (product) => {
   return wrapper;
 };
 
-const Cards = async () => {
+const cards = async () => {
   try {
     const response = await fetch(API_url);
     const data = await response.json();
@@ -293,6 +294,6 @@ const Cards = async () => {
 };
 
 window.onload = () => {
-  Cards(); // Load first set of products on page load
-  loadMoreButton1.addEventListener("click", Cards);
+  cards(); // Load first set of products on page load
+  loadMoreButton1.addEventListener("click", cards);
 };
